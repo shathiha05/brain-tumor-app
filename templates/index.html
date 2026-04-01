@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+
+<!-- 🔥 Navbar -->
+<div class="navbar">
+    <h2>🧠 MedSupport Dashboard</h2>
+</div>
+
+<div class="main">
+
+    <h1>Brain Tumor Detection</h1>
+    <p class="subtitle"> MRI analysis system</p>
+
+    <!-- 🔥 Dashboard Layout -->
+    <div class="dashboard">
+
+        <!-- LEFT PANEL -->
+        <div class="panel left">
+
+            <h3>Upload MRI</h3>
+
+            <form id="uploadForm" enctype="multipart/form-data">
+                
+                <input type="file" name="image" id="imageInput" accept="image/*" required>
+
+                <div class="preview">
+                    <img id="previewImage" style="display:none;" />
+                </div>
+
+                <button type="submit">Analyze Scan</button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="panel right" id="resultBox">
+
+            <h3>Diagnosis Result</h3>
+
+            <p class="status">Waiting for input...</p>
+
+            <!-- 🔥 Badge -->
+            <span class="badge">--</span>
+
+            <!-- 🔥 Confidence -->
+            <div class="confidence-section">
+                <p>Confidence</p>
+                <div class="bar">
+                    <div class="bar-fill" id="confidenceBar"></div>
+                </div>
+            </div>
+
+            <!-- 🔥 Analysis -->
+            <div class="info-box">
+                <h4>Analysis</h4>
+                <p id="analysisText">Upload an MRI scan to begin analysis.</p>
+            </div>
+
+            <!-- 🔥 Model Info -->
+            <div class="info-box">
+                <h4>Model Info</h4>
+                <p>CNN Model</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

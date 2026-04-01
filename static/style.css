@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0f19;
+    color: white;
+    margin: 0;
+}
+
+/* 🔥 Navbar */
+.navbar {
+    background: #111827;
+    padding: 15px 30px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+}
+
+/* Main */
+.main {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+/* 🔥 Dashboard Layout */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Panels */
+.panel {
+    background: #111827;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+/* Left Panel */
+.left h3 {
+    margin-bottom: 10px;
+}
+
+/* File input */
+input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Preview */
+.preview img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #818cf8;
+}
+
+/* 🔥 Result Panel */
+.status {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    background: #374151;
+}
+
+/* Success & Danger */
+.safe {
+    color: #22c55e;
+}
+
+.danger {
+    color: #ef4444;
+}
+
+/* Confidence Section */
+.confidence-section {
+    margin-top: 15px;
+}
+
+/* Bar */
+.bar {
+    height: 10px;
+    background: #1f2937;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #6366f1;
+    transition: width 0.5s ease;
+}
+
+/* Info boxes */
+.info-box {
+    background: #1f2937;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.info-box h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.info-box p {
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+/* Hover effect */
+.panel:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
