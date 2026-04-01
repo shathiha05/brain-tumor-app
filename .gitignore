@@ -1,5 +1,3 @@
 venv/
-brain_model/
-*.h5
 *.zip
 __pycache__/
